@@ -13,6 +13,24 @@ metadata:
 
 # Codex Computer Use Repair
 
+## Installation
+
+Install this skill directly into Codex by placing this file at:
+
+```text
+~/.codex/skills/codex-computer-use-repair/SKILL.md
+```
+
+Quick install with `curl`:
+
+```bash
+mkdir -p ~/.codex/skills/codex-computer-use-repair
+curl -L "https://raw.githubusercontent.com/qyjbb/-codex-computer-use-Repair-skill/main/SKILL.md" \
+  -o ~/.codex/skills/codex-computer-use-repair/SKILL.md
+```
+
+Restart Codex after installing so it can reload skills.
+
 ## Overview
 
 This skill repairs Codex Desktop Computer Use on Windows by working from the lowest-risk fixes toward the highest-risk package patching path. Start by checking the local environment, then restore Codex plugin caches and configuration, repair Chrome native messaging, and only consider MSIX/ASAR patching after all normal local repair paths are exhausted.
